@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.maindiv{
+width: 100%;
+height: 1100px;
+background-image: url(./img/sport-bg.png);
+background-repeat: no-repeat;
+background-size: cover;
+}
+.sub-bg{
+    width: 100%;
+    height: 800px;
+    background-color: rgba(31, 30, 30, 0.266);
+    
+}
+.form-bg{
+    width: 650px;
+    height: 650px;
+    background-color:#ffffff;
+   margin: auto;
+  position: relative;
+  top: 70px;
+  left: 25px;
+  border-radius: 10px;
+}
+
+.form-bg h3{
+    color:#EC152B;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 45px;
+   position: relative;
+   top: 25px;
+   left: 180px;
+}
+.form-bg form{
+    position: relative;
+    top: 40px;
+    left: 0px;
+  
+}
+.finput {
+   
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.finput input{
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border-style: none;
+    border: solid 2px #8e8d8d;
+  
+    
+}
+
+.focuss:focus{
+    outline-style: none;
+    
+
+}
+.sinput{
+      
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+.sinput input{
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border-style: none;
+    border: solid 2px #8e8d8d;
+}
+.tinput{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    margin-top: 10px;
+}
+.tinput input{
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border-style: none;
+    border: solid 2px #8e8d8d;
+}
+.fourinput{
+    padding: 10px;
+    position: relative;
+    top: 15px;
+    left: 80px;
+}
+.fourinput span{
+   position: relative;
+   top: -5px;
+   font-weight: 600;
+   font-family: sans-serif;
+   color: #EC152B;
+}
+
+.sixinput{
+    padding: 10px;
+    position: relative;
+    top: 15px;
+    left: 80px;
+}
+.sixinput span{
+    position: relative;
+    top: -5px;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: #EC152B; 
+}
+
+
+.ddds{
+    position: relative;
+    left :20px;
+}
+.ssd{
+    position:relative;
+    left: 20px;  
+}
+.dddd{
+    position: relative;
+    left :40px;
+}
+
+.sss{
+    position:relative;
+    left: 40px;
+}
+.sty{
+    font-weight: 600;
+    font-family: sans-serif;
+    color: #EC152B;
+}
+.fiveinput{
+    
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 80px;
+    
+
+}
+.fiveinput label{
+    position: relative;
+    top: -5px;
+}
+.fiveinput textarea{
+    padding: 10px 100px  ;
+    border-radius: 5px;
+    border-style: none;
+    border: solid 2px #8e8d8d;
+}
+.btn{
+    border-style: none;
+    width: 500px;
+    height: 40px;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    background-color: #EC152B;
+    color: white;
+    border-radius: 5px;
+    margin-left: 70px;
+    margin-top: 30px;
+}
+.soptionstyle{
+    width: 100px;
+    height: 20px;
+    padding: auto;
+    
+}
+
+
+

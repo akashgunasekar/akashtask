@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>data file</title>
+</head>
+<body>
+
+    <% users.map ((mydata)=>{ %>
+                        
+        <div class=" dataflex">
+           <li class="thete"><%= mydata.fname %>  </li>
+           <p class="thete"><%= mydata.sname %></p>
+           <p class="thete"><%= mydata.email%></p>
+           <p class="thete"><%= mydata.pnumber%></p>
+           <p ><%= mydata.dob%></p>
+           <p ><%= mydata.age%></p>
+           <p ><%= mydata. gender%></p>
+           <p ><%= mydata.address%></p>
+           <p ><%= mydata.selectedOption%></p>
+           
+        </div>
+        
+           
+        <%  }) %>
+
+    
+</body>
+</html>

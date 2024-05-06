@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+
+        <div class="maindiv">
+
+            <div class="sub-bg">
+
+                <div class="form-bg">
+
+                    <h3>Marathonform </h3>
+
+
+                    <form action="/api/users" method="post">
+                        <div class="finput ">
+                            <div>
+                                <label class="sty">First Name</label><br>
+                                <input type="text" placeholder="First Name"
+                                    name="fname" class="focuss"><br>
+                            </div>
+                            <div>
+                                <label class="sty">Second Name</label><br>
+                                <input type="text" placeholder="Second Name"
+                                    name="sname" class="focuss">
+                            </div>
+
+                        </div>
+
+                        <div class="sinput">
+                            <div>
+                                <label class="sty">E-mail</label> <br>
+                                <input type="email" placeholder="Enter E-mail"
+                                    name="email" class="focuss"><br>
+
+                            </div>
+
+                            <div>
+                                <label class="sty">Phone Number</label><br>
+                                <input type="text"
+                                    placeholder="Enter your PhoneNumber"
+                                    name="pnumber" class="focuss">
+                            </div>
+
+                        </div>
+
+                        <div class="tinput">
+                            <div>
+                                <label class="sty" class="focuss">DOB</label><br>
+                                <input type="date" placeholder="DD-MM-YYYY"
+                                    name="dob" class="focuss"><br>
+    
+                            </div>
+
+                            <div>
+                                <label class="sty" class="focuss">Age</label><br>
+                                <input type="number" placeholder="Age" name="age" class="focuss">
+                            </div>
+                            
+                          
+                        </div>
+
+                        <div class="sixinput">
+
+                            <span>Kilometter</span><br>
+                            <Select  name="selectedOption"  class="soptionstyle"  >
+                                <Option value="10km">10km</Option>
+                                <Option value="20km"  >20km</Option>
+                                <Option  value="30km" >30km</Option>
+                            </Select>
+
+                        </div>
+
+                        <div class="fourinput">
+                            <span>Choose your Gender</span><br>
+                            <input type="radio" value="male" name="gender" ><label >Male</label>
+                            <input type="radio" value="female" name="gender" class="ddds"><label class="ssd">Female</label>
+                            <input type="radio" value="other" name="gender" class="dddd"><label class="sss">Other</label>
+                        </div>
+
+                        <div class="fiveinput">
+                            <label class="sty">Address</label><br>
+                            <textarea name="address" class="focuss"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn">SUBMIT</button>
+
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+<script>
+   document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('form');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const fname = document.querySelector('input[name="fname"]');
+        const sname = document.querySelector('input[name="sname"]');
+        const email = document.querySelector('input[name="email"]');
+        const pnumber = document.querySelector('input[name="pnumber"]');
+        const dob = document.querySelector('input[name="dob"]');
+        const age = document.querySelector('input[name="age"]');
+        const selectedOption = document.querySelector('select[name="selectedOption"]');
+        const gender = document.querySelectorAll('input[name="gender"]');
+        const address = document.querySelector('textarea[name="address"]');
+
+        if (fname.value.trim() === '') {
+            alert('Please enter your First Name');
+            fname.focus();
+            return false;
+        }
+
+        if (sname.value.trim() === '') {
+            alert('Please enter your Second Name');
+            sname.focus();
+            return false;
+        }
+
+        if (email.value.trim() === '') {
+            alert('Please enter your Email');
+            email.focus();
+            return false;
+        }
+
+        if (pnumber.value.trim() === '') {
+            alert('Please enter your Phone Number');
+            pnumber.focus();
+            return false;
+        }
+
+        if (dob.value.trim() === '') {
+            alert('Please enter your Date of Birth');
+            dob.focus();
+            return false;
+        }
+
+        if (age.value.trim() === '' || isNaN(age.value.trim())) {
+            alert('Please enter a valid Age');
+            age.focus();
+            return false;
+        }
+
+        if (!selectedOption.value) {
+            alert('Please select Kilometter');
+            selectedOption.focus();
+            return false;
+        }
+
+        let genderSelected = false;
+        gender.forEach(function(g) {
+            if (g.checked) {
+                genderSelected = true;
+            }
+        });
+
+        if (!genderSelected) {
+            alert('Please choose your Gender');
+            return false;
+        }
+
+        if (address.value.trim() === '') {
+            alert('Please enter your Address');
+            address.focus();
+            return false;
+        }
+
+        // If all validations pass, you can submit the form
+        form.submit();
+    });
+});
+
+</script>
+
+
+
+    </body>
+</html>
